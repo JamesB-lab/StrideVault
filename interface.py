@@ -114,15 +114,6 @@ if uploaded_zip is not None:
                             mime="text/csv"
                         )
 
-                    # Parking until later in the project
-                    # with col2:
-                    #     st.markdown("**Visualise this data**")
-                    #     x_col = st.selectbox("Select X-axis column", df.columns, key="xcol")
-                    #     y_cols = st.multiselect("Select Y-axis column(s)", df.columns, key="ycols")
-                    #     if st.button("Plot chart"):
-                    #         if x_col and y_cols:
-                    #             st.line_chart(df.set_index(x_col)[y_cols])
-
                     with col3:
                         if st.button("Convert all JSONs to CSV"):
                             for json_filename in filtered_files:
@@ -156,7 +147,5 @@ if uploaded_zip is not None:
                                             file_name=file_display,
                                             mime="text/csv"
                                         )
-
-
 
 # redeploy trigger
